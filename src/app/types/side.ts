@@ -1,0 +1,1 @@
+export type side = "X" | "O";

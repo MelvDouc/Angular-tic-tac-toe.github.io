@@ -1,0 +1,5 @@
+  <app-cell
+    *ngFor="let key of keys"
+    [index]="key"
+    (cellClick)="mark(key)"
+  ></app-cell>
