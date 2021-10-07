@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { GridService } from 'src/app/services/grid.service';
-import { side } from 'src/app/types/side';
 
 @Component({
   selector: 'app-move-indicator',
@@ -14,8 +13,12 @@ export class MoveIndicatorComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  get sideToMove(): side {
-    return this.gridService.sideToMove;
+  get text(): string {
+    if (this.gridService.winner)
+      return `${this.gridService.winner} wins.`;
+    if (this.gridService.isDraw)
+      return `Draw.`;
+    return `${this.gridService.sideToMove} to move.`;
   }
 
 }

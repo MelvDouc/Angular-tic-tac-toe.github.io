@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { CellComponent } from './components/cell/cell.component';
 import { GridComponent } from './components/grid/grid.component';
 import { MoveIndicatorComponent } from './components/move-indicator/move-indicator.component';
+import { ButtonComponent } from './components/button/button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CellComponent,
     GridComponent,
-    MoveIndicatorComponent
+    MoveIndicatorComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule

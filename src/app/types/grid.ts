@@ -1,3 +1,5 @@
-import { side } from "./side";
+import { optionalSide } from "src/app/types/side";
 
-export type Grid = Map<number, side | null>;
+type Grid = Map<number, optionalSide>;
+
+export default Grid;
