@@ -1,3 +1,19 @@
 button {
+  all: unset;
   user-select: none;
+  font-family: inherit;
+  font-size: 1.1rem;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  padding: .45em .66em;
+  cursor: pointer;
+  border-radius: 99999px;
+  transition: transform .2s;
+}
+
+button:active {
+  transform: scale(.975);
 }
