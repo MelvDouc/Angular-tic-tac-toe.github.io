@@ -43,7 +43,7 @@ export class GridService {
   private changeSideToMove(): void {
     const isFirst = this.sideToMove === Side.first;
     this.sideToMove = (isFirst) ? Side.second : Side.first;
-    this.gridSubject.next(this.grid);
+    this.emitGrid();
   }
 
   private emitGrid(): void {
@@ -66,7 +66,8 @@ export class GridService {
   }
 
   private isGameFilled(): boolean {
-    return [...this.grid.values()].every(val => val !== null);
+    const notNull = (val: optionalSide) => val !== null;
+    return [...this.grid.values()].every(notNull);
   }
 
   private checkWin(): void {
