@@ -1,5 +1,3 @@
-.cell {
-  width: 50px;
-  aspect-ratio: 1 / 1;
-  border: 1px solid black;
+.win {
+  background-color: aqua;
 }

@@ -1,1 +1,1 @@
-<div class="cell" (click)="onClick()">{{ content }}</div>
+<div class="cell" [ngClass]="{ 'win': isWinningCell }" (click)="onClick()">{{ text }}</div>

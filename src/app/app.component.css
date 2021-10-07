@@ -1,5 +1,0 @@
-app-grid {
-  width: max-content;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
